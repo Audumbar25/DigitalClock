@@ -1,0 +1,49 @@
+body {
+    background-image: url(assets/6025832.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure full height coverage */
+    font-family: 'Roboto', sans-serif; /* Use a modern font */
+}
+
+.clock-container {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for contrast */
+    padding: 20px 40px;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Soft shadow for a 3D effect */
+    backdrop-filter: blur(10px); /* Adds a subtle glassmorphism effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* A border for separation */
+}
+
+.clock {
+    color: #f0f0f0; /* Lighter color for readability */
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: 'Courier New', monospace; /* Keep a digital clock feel */
+    text-align: center;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4); /* A stronger shadow for depth */
+}
+
+.clock span {
+    display: block; /* Ensure each time segment is on a new line */
+    margin: 5px 0; /* Reduce the margin to make the gap smaller */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .clock {
+        font-size: 4rem; /* Scale down for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .clock {
+        font-size: 3rem; /* Even smaller for very small screens */
+    }
+}
